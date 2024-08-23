@@ -1,0 +1,90 @@
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,42,106,1) 29%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    margin: 0;
+    top: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#form{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: blue; 
+}
+label{
+    font-size: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+input{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: red;
+    text-align: end;
+}
+
+button:disabled{
+    background-color: rgba(17, 0, 255, .5);
+    color: white;
+    border: 3px solid rgb(4, 6, 70);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:enabled{
+    background-color: rgba(17, 0, 255);
+    color: white;
+    border: 3px solid rgb(4, 6, 70);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 7px;
+    border: 1px solid lightseagreen;
+}
+.input-group input:focus{
+    outline:0;
+}
+.input-group.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.input-group.success input{
+    border-color: green;
+}
+.input-group.error input{
+    border-color: red;
+}
